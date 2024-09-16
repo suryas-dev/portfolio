@@ -1,0 +1,15 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Light background color to blend with the page */
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+    font-size: 14px;
+    color: #6c757d; /* Muted text color */
+  }
+  
+  .footer p {
+    margin: 0;
+  }
