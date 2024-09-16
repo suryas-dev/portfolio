@@ -1,47 +1,94 @@
-.contact-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-container h1 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form label {
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  .contact-form button {
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background-color: #0056b3;
-  }
+.contact {
+  display: flex;
+  padding: 0px 0px 20px 0px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 10px;
+  box-shadow: -1px 2px 7px -2px rgba(125, 123, 125, 1);
+}
+
+.contact__header--getInTouch {
+  font-weight: bold;
+  margin: 30px 0px 10px 0px;
+  font-size: 2vw;
+}
+
+.contact__header {
+  font-weight: 100;
+  color: gray;
+  margin: 10px 0px 0 0;
+  font-size: 1.5vw;
+}
+
+.contact__info {
+  font-size: 2vw;
+}
+
+.contact__OR {
+  margin: 20px;
+  text-align: center;
+}
+
+.contact__greeter {
+  display: flex;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.greeter__sentence--my-name {
+  font-size: 2vw;
+}
+
+.greeter__sentence {
+  padding: 0px 10px;
+  font-size: 2.3vw;
+}
+
+.greeter__input--name {
+  text-align: center;
+  margin: 5px 0px 0px 0px;
+  height: 35px;
+  box-shadow: -1px 2px 7px -2px rgba(125, 123, 125, 1);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.greeter__input--email {
+  text-align: center;
+  height: 35px;
+  margin: 5px 0px 0px 0px;
+  box-shadow: -1px 2px 7px -2px rgba(125, 123, 125, 1);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.greeter__send {
+  margin: 30px 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+.greeter__send__text {
+  background-color: white;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.greeter__send__text--inactive {
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.greeter__captcha {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.greeter__success {
+  margin: 20px 0px;
+}
