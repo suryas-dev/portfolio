@@ -3,24 +3,24 @@ import './Projects.css'; // Import the CSS file
 
 const projects = [
   {
-    title: 'Moto Care Service Backend',
-    description: 'Developed the Moto Care service backend using Java and object-oriented principles on the Google Cloud Platform, enabling device analytics and usage-based recommendations for Motorola agents.',
+    title: 'Motorola Mobility',
+    description: 'Developed the Motofocus web app using Angular, Python, and Moto Care services backend in Java on GCP, enabling device analytics and recommendations.',
     responsibilities: [
-      'Developed and optimized Angular 15 applications, utilizing TypeScript for complex data visualization and operational functionalities.',
-      'Integrated RESTful APIs with front-end applications, ensuring seamless communication and performance.',
-      'Implemented asynchronous code patterns, including Promises and Event Loops, to enhance application responsiveness and user experience.',
-      'Utilized JS tooling such as ESLint and Webpack to streamline development processes and maintain code quality.',
+      'Developing enterprise-level single-page and server-side applications using Angular, ensuring scalability and performance optimization.',
+      'Implementing TypeScript-based UI components for data visualization and operational functionalities.',
+      'Leveraging Angular features such as lazy loading and Angular Universal for improved performance and SEO.',
       'Successfully migrated a critical web application from webapp2 to the Flask framework, resulting in a 30% performance improvement.',
-      'Implemented controllers and API proxies using Python scripting with SQL Alchemy for efficient data processing.',
-      'Designed and implemented the API layer in the cloud client application, which provides services like identity, access, single sign-on, and cloud-based settings to other Motorola apps.',
-      'Managed application deployments and oversaw application management within Google Cloud Platform (GCP).',
-      'Served as the primary technical contact directly communicating with business teams to deliver solutions and development.',
-      'Received commendations for resolving complex issues and ensuring continuous functionality and user satisfaction.'
+      'Developing the Moto Care service backend using Java on the Google Cloud Platform to provide device analytics and usage-based recommendations to Motorola call center agents.',
+      'Implementing controllers and API proxies using Python scripting with SQL Alchemy for efficient data processing.',
+      'Designing and implementing the API layer in the cloud client application, which provides services like identity, access, single sign-on, and cloud-based settings to other Motorola apps.',
+      'Managing application deployments and overseeing application management within the Google Cloud Platform (GCP).',
+      'Received commendations for effectively resolving complex issues impacting agent portals, ensuring continuous functionality and user satisfaction.'
     ],
+    techStack: 'Angular, TypeScript, Python, Flask, Java, Google Cloud Platform (GCP), AWS, SQLAlchemy, Docker, Kubernetes, Jenkins, Git, RESTful APIs',
     date: 'Sep 2023 - Present'
   },
   {
-    title: 'Spend Track Application',
+    title: 'Fiserv',
     description: 'Led the development of a modular interface for the Spend Track application, an end-to-end credit card management service.',
     responsibilities: [
       'Migrated the legacy application from AngularJS to Angular 13, improving load time by 30% and reducing technical debt.',
@@ -32,10 +32,11 @@ const projects = [
       'Automated testing using Mocha and Jasmine, achieving high code coverage and ensuring reliability across deployments.',
       'Applied advanced Git techniques for version control, including branching strategies and conflict resolution.'
     ],
+    techStack: 'AngularJS, Angular 13, Bootstrap, Docker, GitLab CI/CD, Mocha, Jasmine, Git, Jenkins, RESTful APIs, AWS',
     date: 'Feb 2022 - Aug 2023'
-  },
+  }, 
   {
-    title: 'Enterprise-Level Applications',
+    title: 'Motorola Mobility',
     description: 'Designed and developed enterprise-level applications using Angular and TypeScript.',
     responsibilities: [
       'Developed UI components for data visualization, ensuring operational functionality and user engagement.',
@@ -46,10 +47,11 @@ const projects = [
       'Enhanced development workflows using automation tools like Grunt and Gulp.',
       'Utilized browser developer tools for debugging, performance optimization, and rapid prototyping.'
     ],
-    date: 'May 2018 - Jan 2022'
+    techStack: 'Angular, AngularJS, TypeScript, RESTful APIs, CSS, Karma, Grunt, Gulp, Docker, Jenkins, Git, Nginx, GCP',
+    date: 'May 2018 - Jan 2022',
   },
   {
-    title: 'Single-Page Responsive Web Applications',
+    title: 'Cox Automotive',
     description: 'Developed single-page responsive web applications using React, implementing ES6 features and Webpack for module bundling.',
     responsibilities: [
       'Built reusable UI components with React and Styled Components for consistent design across the application.',
@@ -58,6 +60,7 @@ const projects = [
       'Demonstrated technical proficiency in engineering dynamic and interactive web pages.',
       'Ensured usability and accessibility standards compliance, delivering a user-friendly and accessible web experience.'
     ],
+    techStack: 'React, Styled Components, React Router, RESTful APIs, ES6, Webpack, Docker, Jenkins, Git, AWS',
     date: 'Mar 2018 - May 2018'
   }
 ];
@@ -72,12 +75,12 @@ const Projects = () => (
             <h2>{project.title}</h2>
             <p>{project.description}</p>
             <ul className="project-responsibilities">
-              <strong>Responsibilities:</strong>
               {project.responsibilities.map((responsibility, idx) => (
                 <li key={idx}>{responsibility}</li>
               ))}
             </ul>
             <p className="project-date"><strong>Date:</strong> {project.date}</p>
+            <p className="project-techStack"><strong>Tech Stack:</strong> {project.techStack}</p>
           </div>
         </div>
       ))}

@@ -77,3 +77,37 @@ footer {
 main {
   padding: 2rem;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header, footer {
+    padding: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Styles for screens wider than 1024px */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px; /* Larger font size for better visibility */
+  }
+
+  header, footer {
+    font-size: 18px; /* Larger font size for better visibility */
+  }
+
+  main {
+    font-size: 18px; /* Larger font size for better visibility */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Larger font size for headings */
+  }
+}
